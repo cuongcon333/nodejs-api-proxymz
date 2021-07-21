@@ -153,7 +153,7 @@ class ProxyMZ {
 	}
 	/**
 	 * Lấy danh sách thông tin đơn hàng
-	 * @method POST
+	 * @method GET
 	 * @param ordersList Mã đơn hàng GET response
 	 */
 	static async getListOrders(req, res) {
