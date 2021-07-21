@@ -156,7 +156,7 @@ class ProxyMZ {
 	 * @method POST
 	 * @param ordersList Mã đơn hàng GET response
 	 */
-	static async destroyOrders(req, res) {
+	static async getListOrders(req, res) {
 		const { type, countries, service, status, sort, page = 0, limit = 5000 } = req.query;
 		let query = URLSearchParams({ type, countries, service, status, sort, page, limit });
 		let response = await Http.get(`${this.BASE_API}/orders?${query}`, this.accessToken);
